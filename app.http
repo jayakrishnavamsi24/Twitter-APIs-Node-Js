@@ -1,0 +1,61 @@
+POST http://localhost:3000/register/
+Content-Type: application/json 
+
+{
+  "username": "tester1",
+  "password": "vamsi@12345",
+  "name": "Jaya Krishna Vamsi",
+  "gender": "male"
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json 
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+Content-Type: application/json 
+
+{
+  "tweet": "Chandra babu was arrested on Saturday"
+}
+###
+
+DELETE http://localhost:3000/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjk1NDA0MjUzfQ.HzSEe41KsBv91wz6ztW1cvfRmf4lg9HYaxqMdf7kmYI
+###
+
